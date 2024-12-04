@@ -1,7 +1,48 @@
+
+
 body {
     margin: 0;
 }
 
-.social-media {
+header {
+    background-color: #DBDBDB;
+    text-align: center;
+    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: 80px auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header img {
+    width: 65px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    margin: 0 auto;
+}
+
+nav a {
+    min-width: 120px;
+    text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+    color: #63855F;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #63855F;
+}
+
+content img {
+    width: 60px;
+}
+
+footer img {
     width: 48px;
 }
