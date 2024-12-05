@@ -125,6 +125,11 @@ a {
     border: 2px solid black;
 }
 
+#web-development-content a:hover {
+    color: white;
+    background-color: #63855F;
+}
+
 content img {
     width: 60px;
 }
