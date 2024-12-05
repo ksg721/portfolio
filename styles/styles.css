@@ -90,9 +90,16 @@ footer img {
     width: 48px;
 }
 
+#footer-link:hover {
+    color: white;
+    background-color: #63855F;
+}
+
 footer a {
     background-color: #DBDBDB;
     color: #63855F;
     text-decoration: none;
     padding: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
 }
