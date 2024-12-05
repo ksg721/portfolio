@@ -3,6 +3,7 @@
 
 body {
     margin: 0;
+    background-color: whitesmoke;
 }
 
 header {
@@ -54,11 +55,15 @@ main {
 }
 
 h1 {
-    font-family: "Baskervville", serif;;
+    font-family: "Baskervville", serif;
 }
 
 p {
-    font-family: "Poppins", Helvetica, sans-serif;;
+    font-family: "Poppins", Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 #home-page-content {
@@ -72,6 +77,53 @@ p {
     margin: auto;
     padding-left: 25px;
     padding-bottom: 30px;
+    transition: transform .5s;
+}
+
+#home-page-content img:hover{
+    transform: scale(1.2);
+}
+
+#web-development-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 25px 425px;
+}
+
+#web-development-content h1 {
+    text-align: center;
+}
+
+#web-development-content p {
+    text-align: center;
+}
+
+#web-development-content img {
+    width: 45%;
+    margin: auto;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    transition: transform .5s;
+}
+
+#web-development-content img:hover {
+    transform: scale(1.2);
+}
+
+#web-development-content button {
+    grid-row: 3/4;
+    font-family: "Poppins", Helvetica, sans-serif;
+    width: 200px;
+    margin: auto;
+    padding: 5px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#web-development-content button a {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #63855F;
 }
 
 content img {
