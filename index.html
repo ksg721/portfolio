@@ -22,9 +22,79 @@
         </div>
         <div id="home-page-content">
             <p>This projecct is a shopping list. This program allows for the user to create a list and then eddit the contents of the list until they are finished.</p>
-            <img src="images/python-example-1.png" alt="Pyhton code">
+            <!-- <img src="images/python-example-1.png" alt="Pyhton code"> -->
+            <img id="myImg" src="images/python-example-1.png" alt="Pyhton code">
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+            
+              <!-- The Close Button -->
+              <span class="close">&times;</span>
+            
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+            
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+              <script>
+                var modal = document.getElementById("myModal");
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("myImg");
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function(){
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  captionText.innerHTML = this.alt;
+                }
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+              </script>
+            </div>
             <p>This project uses a file downloaded from OurWorldInData.Org that lists the life expectancy in different countried in different years. This program opens the CSV file and searches the opened file for the lowest and highest life expectancies and displays the data to the user.</p>
-            <img src="images/python-example-2.png" alt="Python code">
+            <!-- <img src="images/python-example-2.png" alt="Python code"> -->
+            <img id="myImg2" src="images/python-example-2.png" alt="Python code">
+
+            <!-- The Modal -->
+            <div id="myModal2" class="modal2">
+            
+              <!-- The Close Button -->
+              <span class="close2">&times;</span>
+            
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content2" id="img02">
+            
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption2"></div>
+            </div>
+            <script>
+                var modal = document.getElementById("myModal2");
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById("myImg2");
+                var modalImg = document.getElementById("img02");
+                var captionText = document.getElementById("caption2");
+                img.onclick = function(){
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  captionText.innerHTML = this.alt;
+                }
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close2")[0];
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+              </script>
         </div>
     </main>
     <footer>
